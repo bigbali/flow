@@ -14,7 +14,7 @@
     }
 
     #canvas {
-        background: black;
+        background: #1e1e23;
     }
 
     #overlay {

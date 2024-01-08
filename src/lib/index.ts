@@ -19,10 +19,12 @@ canvas.height = height;
 overlay.width = width;
 overlay.height = height;
 
-canvas.style.width = window.innerWidth * window.devicePixelRatio + 'px';
+canvas.style.width = window.innerWidth + 'px';
 canvas.style.height = window.innerHeight + 'px';
 overlay.style.width = window.innerWidth * window.devicePixelRatio + 'px';
 overlay.style.height = window.innerHeight + 'px';
+
+console.log(window.devicePixelRatio)
 
 const c = new Canvas(canvas);
 
