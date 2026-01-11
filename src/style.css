@@ -8,3 +8,50 @@ body {
     margin: 0;
     max-width: 100%;
 }
+
+.switch-container {
+    position: absolute;
+    top: 1rem;
+    inset-inline: 0;
+    height: 3rem;
+    /* background-color: yellow; */
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    place-content: center;
+
+    .switch-inner {
+        width: 50rem;
+        height: 3rem;
+        background-color: rgb(30 30 30 / 0.5);
+        backdrop-filter: blur(1rem);
+        border-radius: 1rem;
+        border: 1px solid rgb(from white r g b / 0.5);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            &.current a {
+                background-color: rgb(from red r g b / 0.1);
+                border-radius: 0.6125rem;
+                border: 1px solid rgb(from red r g b / 0.2);
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: sans-serif;
+                padding-block: 0.5rem;
+                padding-inline: 1rem;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}

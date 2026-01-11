@@ -1,11 +1,12 @@
 <script>
-	import { onMount } from "svelte";
+	// import { onMount } from "svelte";
+    // import { initializeCanvas } from "$lib";
 
-    onMount(() => import('$lib'));
+    // onMount(() => initializeCanvas('effect2'));
 </script>
 
-<canvas id="canvas"></canvas>
-<canvas id="overlay"></canvas>
+<!-- <canvas id="canvas"></canvas>
+<canvas id="overlay"></canvas> -->
 
 <style>
     canvas {
